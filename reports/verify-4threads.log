@@ -1,0 +1,48 @@
+threads: 4
+SAME 8 tokens, 30 ms: "This is a simple test."
+SAME 10 tokens, 36 ms: "Καλησπέρα! Τι κάνεις σήμερα;"
+SAME 11 tokens, 33 ms: "Η γάτα κάθεται στο χαλί."
+SAME 10 tokens, 29 ms: "The cat sits on the mat."
+SAME 12 tokens, 33 ms: "Le chat est assis sur le tapis."
+SAME 12 tokens, 31 ms: "Die Katze sitzt auf der Matte."
+SAME 9 tokens, 26 ms: "猫坐在垫子上。"
+SAME 12 tokens, 32 ms: "猫がマットの上に座っています。"
+SAME 11 tokens, 29 ms: "고양이가 매트 위에 앉아 있다."
+SAME 11 tokens, 31 ms: "القطة تجلس على السجادة."
+SAME 10 tokens, 28 ms: "Кошка сидит на коврике."
+SAME 10 tokens, 27 ms: "बिल्ली चटाई पर बैठी है।"
+SAME 3 tokens, 17 ms: "a"
+SAME 2 tokens, 17 ms: ""
+SAME 2 tokens, 15 ms: "   "
+SAME 2 tokens, 16 ms: "\n\t "
+SAME 4 tokens, 18 ms: "Hello world"
+SAME 8 tokens, 24 ms: "  leading and trailing spaces  "
+SAME 11 tokens, 30 ms: "multiple    spaces\tand\ttabs\nand\nnewlines"
+SAME 21 tokens, 48 ms: "UPPER lower MiXeD ÀÉÎÕÜ ΆΈΉΊΌΎΏ"
+SAME 18 tokens, 43 ms: "ﬁ ﬂ ① ⅫＡＢＣ１２３ ½ ㎞ ™ ℃ ｶﾀｶﾅ"
+SAME 10 tokens, 28 ms: "full～width～tilde ~ normal"
+SAME 8 tokens, 28 ms: "é é Å Å 한국어 한국어"
+SAME 16 tokens, 40 ms: "emoji 😀👍🏽🇬🇷👨‍👩‍👧‍👦"
+SAME 12 tokens, 33 ms: "control\u0001\u0002chars and zero​width‍joiner﻿"
+SAME 9 tokens, 28 ms: "<s>special</s> <pad> <unk> tokens"
+SAME 6 tokens, 22 ms: "fill the <mask> here"
+SAME 6 tokens, 22 ms: "fill the    <mask>    here"
+SAME 3 tokens, 17 ms: "<mask>"
+SAME 7 tokens, 23 ms: "abc<mask>def"
+SAME 11 tokens, 31 ms: "� lone surrogate �"
+SAME 5 tokens, 20 ms: "𝔘𝔫𝔦𝔠𝔬𝔡𝔢 𝕸𝖆𝖙𝖍 𝟏𝟐𝟑"
+SAME 23 tokens, 52 ms: "Z̤͔ͧ̑̓ä͖̭̈̇lͮ̒ͫǧ̗͚̚o̙̔ͮ̇͐̇"
+SAME 15 tokens, 36 ms: "unknownchars ꙮ 𓀀 𐎀 ᚠᛇᚻ"
+SAME 13 tokens, 34 ms: "1234567890 3.14159 2025-10-27 12:30"
+SAME 38 tokens, 82 ms: "https://huggingface.co/sentence-transfor"
+SAME 15 tokens, 39 ms: "def f(x):\n    return x ** 2  # square"
+SAME 22 tokens, 47 ms: "Ο Αλέξανδρος έγραψε έναν κώδικα σε καθαρ"
+SAME 122 tokens, 228 ms: "Lorem ipsum dolor sit amet, consectetur "
+SAME 512 tokens, 1418 ms: "Πρόταση 0: η γρήγορη καφέ αλεπού πηδάει "
+SAME batch 4 x 11
+SAME batch 4 x 19
+SAME batch 2 x 122
+43/43 identical, 4 thread(s) (single texts: 1050 tokens in 2823 ms)
+tokenizer: 20092/20092 identical
+NFKC: 1174112/1174112 identical (Unicode 17.0)
+ALL IDENTICAL

@@ -1,0 +1,6 @@
+/target/
+# original Hugging Face files (model_quantized.onnx is over GitHub's 100 MB limit; see README)
+/hf/
+# reference tooling dependencies
+/tools/ref/node_modules/
+/.claude/
